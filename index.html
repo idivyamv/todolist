@@ -35,15 +35,16 @@
               <div class="col-lg-10 justify-content-center d-grid">  
                 <div class="alert alert-danger d-none" role="alert">                
                 </div>      
-                <form action="index.html" autocomplete="off" onsubmit="return validatelogin(event);" id="myform" name="myform">
+                <form action="" target="_self" onsubmit="return validate(event);" id="my-form">
                   <div class="form-group">
-                    <label for="emailId">Username </label><br>
+                    <label for="emailId">Username </label><br><br>
                     <input type="text" class="form-control" id="Username" placeholder="Your Username" title="Please enter a valid Username" pattern="[a-zA-Z]{4,}" autocomplete="off" required>
                     <small id="emailHelp" class="form-text text-muted">Only characters allowed and minimum of 4 characters required.</small>
-                  </div>
+                  </div><br>
                   <div class="form-group">
-                    <label for="Password">Password</label>
-                    <input type="password" class="form-control" id="Password" placeholder="Password" pattern="(?=.*\d){5}"; required>
+                    <label for="Password">Password</label><br>
+                    <input type="password" class="form-control" id="Password" placeholder="Password" pattern="[1-9]{4,}"; required>
+                    <small id="emailHelp" class="form-text text-muted">Only numbers allowed and minimum of 4 characters required.</small>
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

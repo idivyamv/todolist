@@ -1,8 +1,4 @@
 
-$('#myform').submit('click', function(e){
-   
-    e.preventDefault();
-});
 function validatelogin(event){
      event.stopPropagation();
     // var mailformat    = '/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(\.[a-z]{2,3}?)$/';
@@ -17,10 +13,10 @@ function validatelogin(event){
          return false;
      }
      else {
-        event.preventDefault()
-        userValidate(Username,pswd,userLogin);
+        event.preventDefault();
         return false;
-         
+        userValidate(Username,pswd,userLogin);
+        
      }
  
  }
