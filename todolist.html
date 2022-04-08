@@ -31,23 +31,11 @@
       <div class="row justify-content-center mt-5 " id="">
         <p class="text-light text-center"><b>Todo List</b></p>
         <br>
-          <div class="col-lg-6 bg-white justify-content-center p-5" >
+          <div class="col-lg-8 bg-white justify-content-center p-5" id="todo_div" >
               <div class="col-lg-10 justify-content-center d-grid">  
-                <div class="alert alert-danger d-none" role="alert" id="Error">                
+                <div class="alert alert-success d-none" role="alert" id="Error">                
                 </div>      
-                <form action="" target="_self" onsubmit="return validate(event);" id="my-form">
-                  <div class="form-group">
-                    <label for="emailId">Username </label><br><br>
-                    <input type="text" class="form-control" id="Username" placeholder="Your Username" title="Please enter a valid Username" pattern="[a-zA-Z]{4,}" autocomplete="off" required>
-                    <small id="emailHelp" class="form-text text-muted">Only characters allowed and minimum of 4 characters required.</small>
-                  </div><br>
-                  <div class="form-group">
-                    <label for="Password">Password</label><br>
-                    <input type="password" class="form-control" id="Password" placeholder="Password" pattern="[0-9]{4,}" required>
-                    <small id="emailHelp" class="form-text text-muted">Only numbers allowed and minimum of 4 numbers required.</small>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+               
               </div>
                 
           </div>       
@@ -58,6 +46,6 @@
         <p class="text-light text-center"></p>
       </nav>  
       <script src="js/bootstrap.min.js"></script> 
-      <script src="js/validate.js"></script> 
+      <script src="js/todo.js"></script> 
 </body>
 </html>
