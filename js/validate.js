@@ -21,7 +21,7 @@ function validate(event){
  
  }
  function userLogin(name) {
-     window.location.href = "todolist.html?user="+name;
+     window.location.href = "todolist.html";
    }
    
   function userValidate(Username, pswd, myCallback) {
