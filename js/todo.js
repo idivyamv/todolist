@@ -43,4 +43,9 @@ async function myDisplay() {
     });
     alert(await checkPromise);
   }
-  
+function confirmLogout()
+{
+    var conf = confirm('Are you sure you want to logout?');
+    if(conf) window.location.href='index.html';
+    else return false;
+}
