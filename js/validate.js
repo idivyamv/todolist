@@ -1,6 +1,6 @@
-
 function validate(event){ 
-    // var mailformat    = '/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(\.[a-z]{2,3}?)$/';
+
+     document.getElementById("Error").classList.add("d-none");
      var Username        = document.getElementById('Username');
      var pswd            = document.getElementById('Password');   
      if (!(Username.checkValidity())) {
