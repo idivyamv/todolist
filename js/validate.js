@@ -1,5 +1,5 @@
 
-function validatelogin(event){
+function validate(event){ alert(test);
      event.stopPropagation();
     // var mailformat    = '/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(\.[a-z]{2,3}?)$/';
      var Username        = document.getElementById('Username');
