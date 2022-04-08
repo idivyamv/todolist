@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-info"> 
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item active" >
+                <a class="nav-link active" href="Todolist.html">Todolist</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary" href="index.html" onclick="confirm('Are you sure you want to logout?')" role="button">Logout</a>
+              </li>
+            </ul>              
+          </div>
+        </div>
+    </nav> 
+</header>
+    <br><br><br><br>
+    <br><br><br><br>
+    <div class="container">
+      <div class="row justify-content-center mt-5 " id="">
+        <p class="text-light text-center"><b>Todo List</b></p>
+        <br>
+          <div class="col-lg-6 bg-white justify-content-center p-5" >
+              <div class="col-lg-10 justify-content-center d-grid">              
+                <form action="Todolist.html" target="_self" autocomplete="off" onsubmit="return validatelogin(event);">
+                  <div class="form-group">
+                    <label for="emailId">Email address</label>
+                    <input type="email" class="form-control" id="emailId" placeholder="Your Email" title="Please enter a valid Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$" autocomplete="off" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="Password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"; required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+                
+          </div>       
+      </div>
+      
+    </div>
+    <nav class="navbar bootom navbar-light bg-light fixed-bottom">
+        <p class="text-light text-center"></p>
+      </nav>  
+      <script src="js/validate.js"></script> 
+</body>
+</html>
