@@ -13,25 +13,25 @@ function validate(event){
      }
      else {
         event.preventDefault();
-        Username = Username.value;
-        userValidate(Username,pswd,userLogin);
+        username      = Username.value;
+        password      = pswd.value;
+        userValidate(username,password,userLogin);
         
      }
  
  }
  function userLogin(name) {
-     window.location.href = "todolist.html";
+     window.location.href = "todolist.html?user="+name;
    }
    
-   function userValidate(Username, pswd, myCallback) {alert(Username+pswd);
-    if(Username =='admin' && pswd =='12345')
-         {   myCallback(Username);
-            return false;
-         }
-     else {
-         document.getElementById("Error").innerHTML="Invalid username or Password.Please try again..";
-         document.getElementById("Error").classList.remove("d-none");
-         return false;
-     }
-   }
+  function userValidate(Username, pswd, myCallback) {
+  if(Username =='admin' && pswd =='12345')
+        {   myCallback(Username);         
+        }
+    else {
+        document.getElementById("Error").innerHTML="Invalid username or Password.Please try again..";
+        document.getElementById("Error").classList.remove("d-none");
+        return false;
+    }
+  }
    
