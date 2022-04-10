@@ -23,7 +23,7 @@ function myTodo(some) {
     const myObj = JSON.parse(some);
     let table ='<table class="table table-primary">';
     for (let i = 0; i < myObj.length; i++) {
-        if(myObj[i].completed) var checklabel = 'checked';
+        if(myObj[i].completed) var checklabel = 'checked disabled';
         else var checklabel = '';
           table += "<tr><td><input type='checkbox' onclick='myDisplay()' "  +checklabel+ "></td><td>"+myObj[i].title+"</td></tr>" ;      
    // const myObj = JSON.parse(some);
